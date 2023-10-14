@@ -1,0 +1,60 @@
+<div class="card">
+
+  <div class="card-header">
+    <img class="sun" src="https://kupikolesa.it-trends.ru/assets/images/sun.svg" alt="">
+    <a href="">
+      <img class="wheel" [src]="product.images.length > 0 ? 'https://kupikolesa.it-trends.ru' + product.images[0].path : 'https://kupikolesa.it-trends.ru/assets/images/tires.svg'" alt="">
+    </a>
+    <img class="tack" src="	https://kupikolesa-lplf.vercel.app/assets/icons/needle.svg" alt="">
+  </div>
+
+  <div class="card-body">
+    <p class="product-name">{{product.name}}</p>
+    <div class="ratings-block-outer">
+      <div class="ratings-block">
+
+        <div class="stars">
+          <img style="width: 113px; height: 21px" src="./assets/icons/star.svg" alt="">
+        </div>
+
+        <div class="rating">
+         5.0
+        </div>
+      </div>
+      <div class="count">
+        <p> {{product.count}} шт</p>
+      </div>
+    </div>
+
+    <ng-container *ngIf="!isAction else actionProducts">
+      <div class="reviews-price">
+        <div class="reviews">
+          Отзывы (4)
+        </div>
+        <div class="price">
+          {{product.price}} ₽
+        </div>
+      </div>
+      <button class="button-buy">
+        <div class="basket-button-content"><img src="./assets/pages_home/basket.png">Корзина</div>
+      </button>
+    </ng-container>
+
+    <ng-template #actionProducts>
+      <div class="price-block">
+
+        <button class="button-buy">
+          <div class="basket-button-content"> + <img src="./assets/pages_home/basket.png"></div>
+        </button>
+
+        <div class="prices">
+          <span class="old-price price">{{product.price}} ₽</span>
+          <span class="new-price price">{{product.price}} ₽</span>
+        </div>
+
+      </div>
+    </ng-template>
+
+  </div>
+
+</div>

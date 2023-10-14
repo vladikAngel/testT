@@ -7,8 +7,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/UI/header/header.component';
 import { FooterComponent } from './components/UI/footer/footer.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ProductCard } from './components/product/product-card';
 import { HomeComponent } from './components/home/home.component';
+import {MatSelectModule} from "@angular/material/select";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
 
@@ -16,16 +20,20 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ProductsComponent,
+    ProductCard,
     HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgMultiSelectDropDownModule.forRoot()
+    NgMultiSelectDropDownModule.forRoot(),
+    MatSelectModule,
+    HttpClientModule,
+    MatInputModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

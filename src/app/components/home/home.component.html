@@ -1,9 +1,52 @@
 <div class="body">
-  <div class="multiselect">
-    <div class="multiselect-list">
-      <ng-multiselect-dropdown></ng-multiselect-dropdown>
+
+  <h2>Быстрый подбор</h2>
+
+  <div class="selects-block">
+    <div class="select-items-column">
+      <div class="selects-items-row">
+          <ng-multiselect-dropdown *ngFor="let select of options.items.slice(0,2)"
+            [placeholder]="select.name"
+            [settings]="dropdownSettings"
+            [data]="select.values"
+            [(ngModel)]="selectedItems"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+          >
+          </ng-multiselect-dropdown>
+      </div>
+      <div class="selects-items-row">
+        <ng-multiselect-dropdown *ngFor="let select of options.items.slice(2,4)"
+                                 [placeholder]="select.name"
+                                 [settings]="dropdownSettings"
+                                 [data]="select.values"
+                                 [(ngModel)]="selectedItems"
+                                 (onSelect)="onItemSelect($event)"
+                                 (onSelectAll)="onSelectAll($event)"
+        >
+        </ng-multiselect-dropdown>
+      </div>
+    </div>
+    <div class="button-block">
+      <button class="button">Найти всё</button>
     </div>
   </div>
+
+  <h2>Популярные товары</h2>
+
+  <div class="products popular">
+    <app-product [product]="product" *ngFor="let product of products"></app-product>
+  </div>
+
+  <h2>Акционные товары</h2>
+
+  <div class="products action">
+    <app-product [isAction]="true" [product]="product" *ngFor="let product of products"></app-product>
+  </div>
+
+  <h2>Что нового?</h2>
+
+  <h2>Клиенты довольны</h2>
 
 
 </div>

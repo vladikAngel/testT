@@ -1,10 +1,46 @@
-.multiselect-list{
-background-color: #f2dc61;
-padding: 20px;
-width: 650px;
-border-radius: 10px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-flex-wrap: wrap;
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.selects-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 630px;
+  background-color: #f2dc61;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.select-items-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selects-items-row {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 40%;
+}
+.button-block {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #212529;
+  color: white;
+}
+.button:hover {
+  background-color: black;
+}
+
+.products {
+  display: flex;
+  gap: 1rem;
 }

@@ -1,0 +1,118 @@
+.card {
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  max-width: 267px;
+
+}
+.card:hover{
+  transition: border 150ms linear,box-shadow 150ms linear,-webkit-box-shadow 150ms linear;
+  box-shadow: 0 10px 25px 0 rgba(0,0,0,.125);
+}
+.card-header {
+  display: flex;
+  position: relative;
+}
+.sun {
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  width: 24px;
+  height: 24px;
+}
+.tack {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  width: 24px;
+  height: 24px;
+}
+.wheel {
+  height: 176px;
+  margin: 20px 86.5px 0px 73.5px;
+}
+.card-body {
+  padding: 0px 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.product-name {
+  word-break: break-all;
+}
+.ratings-block {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.count {
+  p {
+    font-size: 12px;
+    margin: unset !important;
+  }
+  padding: 2px 10px;
+  background: #F3DC61;
+  border-radius: 20px;
+}
+.reviews-price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #6D92F0;
+}
+.reviews{
+  ont-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #AEAEAE;
+}
+
+.price-block {
+  .button-buy {
+    .basket-button-content {
+      font-size: 20px;
+      gap: unset !important;
+    }
+  }
+}
+
+.basket-button-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.button-buy{
+  height: 28px;
+  background-color:#bacbf5;
+  border-radius: 6px;
+  border: 1px solid #bacbf5;
+}
+.ratings-block-outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.old-price {
+  color: red;
+  text-decoration-line: line-through;
+  font-size: 18px;
+}
