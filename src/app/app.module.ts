@@ -13,6 +13,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {MatInputModule} from "@angular/material/input";
 import {FormsModule} from "@angular/forms";
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
 
@@ -22,6 +23,7 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     ProductCard,
     HomeComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

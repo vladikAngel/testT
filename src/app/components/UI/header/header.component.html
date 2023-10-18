@@ -50,15 +50,47 @@
       </div>
       <div class="header-menu">
         <button class="btn btn__header-menu btn__header-menu-search">
-          <img src="/assets/pages_home/search.png">Поиск</button>
+          <img src="/assets/pages_home/search.png">Поиск
+        </button>
         <button class="btn btn__header-menu btn__header-menu-favorits">
-          <img src="/assets/pages_home/needle.png">Избранное</button>
+          <img src="/assets/pages_home/needle.png">Избранное
+        </button>
         <a href="/cart" class="btn btn__header-menu btn__header-menu-basket">
-          <img src="/assets/pages_home/basket.png">Корзина
+          <img class="backet-adaptive" src="/assets/pages_home/basket.png">Корзина
           <span class="basket-counter">0</span>
         </a>
       </div>
     </div>
   </div>
-  <a href="/" class="header__link-to-main">Главная</a>
 </div>
+<div class="header-mobile">
+  <div class="row-upper">
+    <div class="burger-menu">
+      <div class="burger-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="burger-links">
+        <a class='links-item' href="@">Шины</a>
+        <a class='links-item' href="@">Мотошины</a>
+        <a class='links-item' href="@">Диски</a>
+        <a class='links-item' href="@">Избранное</a>
+      </div>
+    </div>
+    <img class="logo-mobile" src="./assets/pages_home/logo-kupikolesa.png" alt="">
+  </div>
+  <div class="row-lower">
+    <button class="header-menu-search-mobile">
+      <img class="search-mobile" src="/assets/pages_home/search.png">
+      <input type="search" class="search-line" name="q" placeholder="Поиск" />
+    </button>
+    <button class="header-mobile-favorites">
+      <img class="man-mobile" src="/assets/pages_home/man.png">
+    </button>
+    <button class="header-mobile-basket">
+      <img class="basket-mobile" src="/assets/pages_home/basket.png">
+    </button>
+  </div>
+</div>
+

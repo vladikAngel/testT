@@ -1,0 +1,181 @@
+.card-header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text-left-header{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  span{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2D33;
+  }
+}
+.text-kod{
+  font-size: 20px;
+  line-height: 23px;
+  color: #9e9e9e;
+}
+.card-clip{
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #606678;
+  background: none;
+  border: none;
+}
+.text-right-header{
+  display: flex;
+  gap: 10rem;
+  padding: 20px;
+}
+.bth-clip{
+  display: flex;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+.text-all-clip{
+  P{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #606678;
+    background: none;
+    border: none;
+  }
+  display: flex;
+  align-items: flex-start;
+}
+.star{
+  width: 137px;
+}
+.reiting{
+  span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #2B2D33;
+  }
+  display: flex;
+  gap: 1rem;
+}
+.card-main{
+  display: flex;
+}
+.wheels{
+  width: 180px;
+  padding: 30px;
+}
+.centre{
+  column-count: 2;
+  column-gap: 20px;
+  width: 461px;
+  background: #F1F1F1;
+  border-radius: 4px;
+  padding: 32px 38px;
+
+}
+
+.NAME{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #848484;
+}
+.info-right{
+  text-align: right;
+  span{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2B2D33;
+  }
+}
+.green-word{
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 26px;
+  color: #16C888!important;
+}
+.info-centre-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  text-align: left;
+}
+.info-centre-left{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+  .card-block{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .text-left-header{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    span{
+      font-size: 18px;
+    }
+  }
+  .green-word{
+     font-size: 16px!important;
+  }
+  .text-right-header{
+    display: flex;
+    gap: 5rem;
+    padding: 20px;
+    flex-direction: row;
+
+  }
+  .text-kod{
+    font-size: 16px;
+  }
+  .reiting{
+    span{
+      font-size: 14px;
+    }
+  }
+  .star{
+    width: 100px;
+  }
+  .NAME{
+    font-size: 16px;
+  }
+  .info-right{
+    span{
+      font-size: 18px;
+    }
+  }
+  .card-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .centre{
+    width: 350px;
+  }
+}
+

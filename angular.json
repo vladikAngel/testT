@@ -33,6 +33,7 @@
               "@angular/material/prebuilt-themes/purple-green.css",
               "src/styles.scss",
               "src/ng-multiselect-dropdown.theme.scss"
+
             ],
             "scripts": []
           },

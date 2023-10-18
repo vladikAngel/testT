@@ -162,14 +162,7 @@ justify-content: space-between;
   border-color: #eaeaea;
   text-decoration: none;
 }
-.header .header__link-to-main {
-  display: block;
-  width: 100%;
-  margin: 16px 12px;
-  text-decoration: underline;
-  color: #3153b6;
-  font-size: 18px;
-}
+
 .btn {
   border: none;
   cursor: pointer;
@@ -189,3 +182,152 @@ justify-content: space-between;
   right: -5px;
   top: -12px;
 }
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.row-lower{
+  display: none;
+}
+.logo-mobile{
+  display: none;
+}
+
+.line {
+  display: none;
+}
+.burger-links{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+  .header{
+    display: none;
+  }
+  .header-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 299;
+    color: #000;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .row-upper{
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  .logo-mobile{
+    display: flex;
+  max-width: 285px;
+  }
+  .row-lower{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-menu-search-mobile {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 18px;
+    background-color: #eaeaea;
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+
+  }
+  .search-mobile{
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+  .header-mobile-favorites{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 6px;
+    border: none;
+  }
+  .header-mobile-basket{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-color: #EFEFEF;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 6px;
+    border: none;
+  }
+  .basket-mobile,
+  .man-mobile{
+    max-height: 20px;
+    max-width: 20px;
+  }
+  .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #D6BC30;
+    margin: 3px 0;
+  }
+  .burger-links{
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .search-line{
+    background-color: #EFEFEF;
+    border: none;
+  }
+  input[value="Поиск"] {
+    color: #AEAEAE;
+  }
+  .search-line:focus {
+    border: none;
+    outline: none;
+  }
+  .links-item{
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  }
+

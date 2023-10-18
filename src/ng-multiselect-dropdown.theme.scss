@@ -7,6 +7,7 @@ $disable-background-color: #eceeef;
   font-family: inherit;
   background-color: white !important;
   .dropdown-btn {
+    overflow: hidden;
     display: inline-block;
     border: 20px solid #adadad;
     width: 100%;
