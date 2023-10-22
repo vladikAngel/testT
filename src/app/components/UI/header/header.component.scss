@@ -198,33 +198,42 @@ justify-content: space-between;
 .line {
   display: none;
 }
-.burger-links{
-  display: none;
+
+.burger-links {
+  display:none;
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 100%;
+}
+.burger-links.active {
+  display: flex;
+  flex-direction: column;
 }
 
+.burger-links .links-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  text-decoration: none;
+  margin: 5px 0;
+}
+.links-item:hover{
+  background-color: gray;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 @media only screen and (max-width: 768px){
   .header{
     display: none;
   }
+
   .header-mobile{
     display: flex;
     flex-direction: column;
@@ -233,7 +242,6 @@ justify-content: space-between;
     background: #fff;
     box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
     position: fixed;
-    width: 100%;
     top: 0;
     z-index: 299;
     color: #000;
@@ -306,6 +314,7 @@ justify-content: space-between;
     margin: 3px 0;
   }
   .burger-links{
+    display: flex;
     flex-direction: column;
     background-color: white;
     position: absolute;

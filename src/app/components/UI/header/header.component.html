@@ -66,12 +66,12 @@
 <div class="header-mobile">
   <div class="row-upper">
     <div class="burger-menu">
-      <div class="burger-icon">
+      <div class="burger-icon" (click)="isBurger = !isBurger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div class="burger-links">
+      <div class="burger-links" *ngIf="isBurger">
         <a class='links-item' href="@">Шины</a>
         <a class='links-item' href="@">Мотошины</a>
         <a class='links-item' href="@">Диски</a>

@@ -1,7 +1,7 @@
 <div class="card-block">
   <div class="card-header">
     <div class="text-left-header">
-      <span>Автошины Nokian Hakkapeliitta 9 SUV (шип) 315/35 R20 110T</span>
+      <span>{{product.name}}</span>
       <div class="reiting">
         <img class="star" src="/assets/icons/star.svg">
         <span>3.4</span>
@@ -11,47 +11,64 @@
       <span class="text-kod">Код товара: 264</span>
       <div class="text-all-clip">
         <button class="bth-clip"><img class="card-clip" src="/assets/pages_home/needle.png">
-        <p>В избранное</p>
+          <p>В избранное</p>
         </button>
       </div>
     </div>
   </div>
   <div class="card-main">
-    <img class="wheels" src="/assets/pages_home/wheel.png" alt="">
-    <div class="centre">
-      <div class="info-centre-left">
-        <div class="info-left">
-          <span class="NAME">Сезон</span>
-        </div>
-        <div class="info-left">
-          <span class="NAME">Ось</span>
-        </div>
-        <div class="info-left">
-          <span class="NAME">Наличие</span>
-        </div>
-        <div class="info-left">
-          <span class="NAME">Самовывоз</span>
-        </div>
-        <div class="info-left">
-          <span class="NAME">Доставка</span>
-        </div>
+    <img class="wheels" [src]="'https://kupikolesa.it-trends.ru' + product.images[0].path">
+    <div class="center" *ngIf="product">
+      <div class="row" *ngFor="let option of product.optionValues">
+      <div class="left-center">
+        {{option.optionName}}
       </div>
-      <div class="info-centre-right">
-        <div class="info-right">
-          <img src="/assets/icons/sun.svg">
+      <div class="rigth-center">
+        {{option.value}}
+      </div>
+      </div>
+    </div>
+    <div class="price-main">
+      <div class="order-price">
+        <div class="price">
+          <div class="price-left">
+            <p>{{product.price}}₽</p>
+          </div>
+          <div class="price-right">
+           <div class="new-price">
+             <p class="sum-name">общая сумма</p>
+             <p class="sum-value">{{product.price * countProducts}}₽</p>
+           </div>
+          </div>
         </div>
-        <div class="info-right">
-          <span>Передняя ось</span>
+        <div class="calculator">
+        <div class="count">
+          <p>Количество</p>
         </div>
-        <div class="info-right">
-          <span class="green-word">В наличии (>12 шт.)</span>
+          <div class="calc-buttons">
+            <button class="calc-button" (click)="countProducts = countProducts > 0 ? countProducts - 1 : countProducts">
+                <p>-</p>
+            </button>
+            <p>{{countProducts}}</p>
+            <button class="calc-button" (click)="countProducts = countProducts + 1">
+              <p>+</p>
+            </button>
+          </div>
         </div>
-        <div class="info-right">
-          <span>Через 2 дня <img src="/assets/icons/question.svg"> </span>
+        <div class="info">
+         <img src="/assets/icons/exclamation-point.svg">
+          <p>Рассрочка или кредит</p>
         </div>
-        <div class="info-right">
-          <span>Через 2 дня <img src="/assets/icons/question.svg"> </span>
+        <div class="buy-button">
+        <button>
+          <div class="cart-img">
+          <img src="/assets/pages_home/basket.png">
+          </div>
+          <p>Добавить в корзину</p>
+        </button>
         </div>
+
+
       </div>
     </div>
   </div>

@@ -66,22 +66,31 @@
   gap: 1rem;
 }
 .card-main{
-  display: flex;
+ display: flex;
+  align-items: flex-start;
+  gap: 3rem;
 }
 .wheels{
+  flex: 1;
   width: 180px;
   padding: 30px;
 }
-.centre{
-  column-count: 2;
-  column-gap: 20px;
-  width: 461px;
+.center{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2rem;
   background: #F1F1F1;
   border-radius: 4px;
   padding: 32px 38px;
-
 }
 
+.row{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
 .NAME{
   font-weight: 500;
   font-size: 18px;
@@ -115,9 +124,126 @@
   gap: 2rem;
 }
 
+.price-main{
+  flex: 1;
+  background: #F1F1F1;
+  border-radius: 4px;
+}
+.order-price{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 34px;
+  div {
+    display: flex;
+    div{
+      flex: 1;
+    }
+  }
+}
+.price{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.calculator{
+  display: flex;
+  gap: 2rem;
+}
+.new-price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-left{
+  p{
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 49px;
+    color: #6D92F0;
+  }
+}
+.sum-name{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #959595;
+}
+.sum-value{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B2D33;
+}
+p{
+  margin: 0!important;
+}
+.calc-buttons{
+  p{
+    font-size: 20px;
+   font-weight: 500;
+  }
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.count{
+  p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2B2D33;
+  }
+}
+.calc-button{
+  width: 28px;
+  height: 28px;
+}
+.info{
+  p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #5A5E6C;
+  }
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.buy-button{
 
 
-
+  button{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    background: #F3DC61;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #2B2D33;
+    border-radius: 4px;
+    padding: 0.7rem;
+    justify-content: center;
+  }
+}
+.cart-img{
+  flex: unset!important;
+}
+.rigth-center{
+  text-align: right;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+.left-center{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #848484;
+}
 
 
 
@@ -175,7 +301,8 @@
     align-items: center;
   }
   .centre{
-    width: 350px;
+    width: 330px;
   }
+
 }
 

@@ -1,8 +1,8 @@
-<div class="card">
+<div class="card" [routerLink]="['card/'+product.id]">
 
   <div class="card-header">
     <img class="sun" src="https://kupikolesa.it-trends.ru/assets/images/sun.svg" alt="">
-    <a href="">
+    <a>
       <img class="wheel" [src]="product.images.length > 0 ? 'https://kupikolesa.it-trends.ru' + product.images[0].path : 'https://kupikolesa.it-trends.ru/assets/images/tires.svg'" alt="">
     </a>
     <img class="tack" src="	https://kupikolesa-lplf.vercel.app/assets/icons/needle.svg" alt="">
